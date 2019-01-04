@@ -42,3 +42,10 @@ def get_letter_grade(score):
     return "F"
 
 print get_letter_grade(get_average(tyler))
+
+def get_class_average(class_list):
+  results = []
+  for student in class_list:
+    student_average = get_average(student)
+    results.append(student_average)
+  return average(results)
